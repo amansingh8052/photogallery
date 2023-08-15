@@ -1,0 +1,1052 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat&family=Nova+Cut&family=Poppins:wght@300;400;500;600;700;800&family=Roboto&family=Ubuntu&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+.navbar{
+    background-color: rgb(8, 9, 97);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: fixed;
+    z-index: 2;
+}
+
+.logo{
+    height: 70px;
+    width: 100px;
+    background-color: #333;
+    position: absolute;
+    left: 30px;
+}
+#logoImg{
+  position: relative;
+  width: 36px;
+  height: 56px;
+  top: 7px;
+  left: 30px;
+}
+.navbar a{
+  cursor: pointer;
+    margin: 0 5px;
+    text-decoration: none;
+    color: rgb(66, 167, 234);
+}
+
+.btn {
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 12px;
+    background: #333;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin: 0 8px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: #6f7678;
+    text-decoration: none;
+  }
+
+
+ /*position of dropdown */
+ .dropdown {
+    position: absolute;
+    display: none;
+  }
+  /* set the size and position of button on web */
+  .menu-button {
+    background: transparent;
+    padding: 10px 22px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    }
+  .homeicon{
+    color: #42a7ea;
+  }
+  .homeicon:hover{
+   color: rgb(171, 206, 229);
+    
+  }
+  .menu-button:hover{
+    position: relative;
+    top: 2px;
+  }
+ 
+  /* provide css to background of list items */
+ 
+  
+  #list-items {
+    display: none;
+    position: absolute;
+    width: 156.5px;
+    right: -10px;
+    top: 52px;
+    z-index: 1;
+  }
+  
+  /* provide css to list items */
+  #list-items a {
+    display: block;
+    font-size: 15px;
+    background-color: rgb(8, 9, 97);
+    color: rgb(66, 167, 234);
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+  }
+    #list-items a:hover{
+        background-color: rgb(29, 31, 113);
+    }
+   
+  .anim{
+    animation: animate 0.1s ease-in;
+  }  
+  @keyframes animate {
+    0%{
+      top: -50px;
+      opacity: 0;
+    }
+    20%{
+      top: -25px;
+      opacity: 0.2;
+    }
+    40%{
+      top: -5px;
+      opacity: 0.4;
+    }
+    60%{
+      top: 15px;
+      opacity: 0.6;
+    }
+    80%{
+      top: 30px;
+      opacity: 0.8;
+    }
+    100%{
+     top: 52px;
+     opacity: 1;
+    }
+  }
+  
+    @media (max-width: 1050px){
+      .dropdown{
+        display: inline-block;
+      }
+      .menu{
+        display: none;
+      }
+    }
+   
+  
+    /* home page styling */
+
+    #home{
+        width: 100%;
+        height: 40rem;
+        background-image: linear-gradient(rgb(4, 156, 233), rgb(24, 246, 227));
+        color: #333;
+        align-items: center;
+        justify-content:center;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .upload-btn {
+        background: #3498db;
+        background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+        background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+        background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+        background-image: -o-linear-gradient(top, #3498db, #2980b9);
+        background-image: linear-gradient(to bottom, #3498db, #2980b9);
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0px;
+        color: #ffffff;
+        font-size: 18px;
+        background: #080961;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+        position: absolute;
+        right: 5vw;
+        top: 15vh;
+        font-weight: bold;
+        letter-spacing: 0.1cm;
+      }
+      
+      .upload-btn:hover {
+        background: rgb(13, 21, 127);
+        text-decoration: none;
+      }
+
+  
+#home h1{
+  font-size: 5vw;
+  display: inline;
+  padding: 0 6rem;
+  font-weight: lighter;
+  position: relative;
+  top: -4rem;
+  letter-spacing: 1mm;
+  word-spacing: 5mm;
+  color: black;
+}
+#home p{
+  font-size: 1rem;
+  display: inline;
+  padding: 0 6rem;
+  margin-left: 10px;
+  font-weight: lighter;
+  position: absolute;
+  top: 19.5rem;
+  letter-spacing: 0.5mm;
+  word-spacing: 1mm;
+  color: #09356f;
+}
+
+
+.search{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: absolute;
+  top: 55vh;
+  width: 39rem;
+  height: 6vh;
+}
+.search .search-icon{
+  border-radius: 10px;
+  background-color: white;
+  width: 50px;
+  height: 6vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#searchbar{
+  width: 90%;
+  height: 6vh;
+  border-radius: 10px;
+  border: none;
+}
+.icon{
+  cursor: pointer;
+  position: relative;
+  top: 1.7vh;
+  left: 0.6vw;
+}
+@media (max-width:620px){
+  #searchbar{
+    width: 85%;
+  }
+  .search .search-icon{
+    background-color: white;
+    width: 10%;
+
+  }
+  
+ .search{
+    width: 24rem;
+ }
+ #home p{
+  font-size: 0.9rem;
+  margin-left: 30px;
+  padding: 0;
+ }
+
+}
+
+/* category page styling */
+.type{
+  background-color: #282d8f;
+}
+.typetext{
+  padding: 50px 20px;
+  font-size: 1.5vw;
+  color: white;
+}
+@media(max-width:750px){
+  .typetext{
+    font-size: 4vw;
+  } 
+}
+
+.category{
+
+display: flex;
+flex-wrap: wrap;
+justify-content:space-evenly;
+/* height: 40rem; */
+max-height: max-content;
+width: 100%;
+gap: 30px;
+padding-bottom: 20px;
+align-items: center;
+justify-content: center;
+}
+
+.category .cat{ 
+height: 250px;
+width: 450px;
+display: flex;
+position: relative;
+align-items: center;
+justify-content: center;
+font-size: 2rem;
+cursor: pointer;
+}
+.category .photo{
+  background-image: url(images/photo.jpg);   
+  color: white;
+}
+.category .illustrations{
+  background-image: url(images/illustration.jpg);  
+  color: white; 
+}
+.category .clipart{
+  background-image: url(images/clipart.jpg);  
+  font-weight: bold; 
+  letter-spacing: 1mm;
+}
+.category .vectors{
+  background-image: url(images/vector.jpg);  
+  font-weight: bold;
+  letter-spacing: 1mm; 
+}
+.category .icons{
+  background-image: url(images/icon.jpg);  
+  font-weight: bolder;
+  letter-spacing: 1mm;  
+}
+.category .psd{
+  background-image: url(images/psd.jpg); 
+  font-weight: bold;
+  letter-spacing: 1mm; 
+  color: white;  
+}
+
+.cat:hover{
+  transform: translateY(-10px);
+}
+
+#typewriter h1 {
+  display: block;
+  font-size: 5vw;
+  padding: 0 6rem;
+  font-weight: lighter;
+  position: relative;
+  top: -4rem;
+  letter-spacing: 2mm;
+  word-spacing: 5mm;
+  color: rgb(7, 5, 147);
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* border-right: .1em solid rgb(8, 31, 206);  */
+  white-space: nowrap;/* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+ 
+  animation: 
+    typing 4s steps(40, end),
+    blink-caret .5s step-end infinite;
+    
+}
+.show{
+  border-right: .08em solid rgb(8, 31, 206);
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(8, 31, 206) }
+  
+}
+@media (max-width:850px){
+  #typewriter h1{
+    font-size: 7vw;
+  }
+}
+@media (max-width:650px){
+  #typewriter h1{
+    font-size: 8vw;
+    word-spacing: normal;
+    letter-spacing: 1mm;
+  }
+}
+
+/* trending section styling */
+
+.trending{
+  background-color: #5c5fb7;
+  width: 100%;
+  /* max-height: max-content; */
+  height: 80rem;
+  overflow: hidden;
+  cursor:zoom-in;
+  
+}
+.trendingtext{
+  display: flex;
+  position: relative;
+  color: white;
+  padding: 50px 0 50px 20px;
+  
+}
+.trendingtext h1{
+  font-weight: lighter;
+  margin-right: 15px;
+  
+  
+}
+.trend{
+  color: red;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+  
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+ 
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1100px) {
+  .column {
+    flex: 50%;
+    max-width: 30%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.fullscreen-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(58, 58, 58, 0.9);
+  z-index: 9999;
+  
+}
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+ 
+}
+
+.fullscreen-image {
+  
+  max-height: 90%;
+  max-width: 90%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.prev-btn, .next-btn {
+  display: none;
+}
+.show-more{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  justify-content: center;
+}
+.more{
+  overflow: visible;
+  height: fit-content;
+}
+.show-icon{
+  position: relative;
+  top: 15px;
+  animation: animate 0.6s ease infinite;
+}
+.rotat{
+  rotate: 180deg;
+  animation: animate 0.6s reverse ease infinite;
+}
+
+@keyframes animate {
+  0%{
+    top: 10px;
+    opacity: 0.2;
+  }
+  25%{
+    top:12.5px;
+    opacity: 0.4;
+  }
+  50%{
+    top:15px;
+    opacity: 0.6;
+  }
+  75%{
+    top:17.5px;
+    opacity: 0.8;
+  }
+  100%{
+    top: 20px;
+    opacity: 1;
+  }
+}
+
+/* contact section styling */
+#contact{
+  width: 100%;
+  height: 57vh;
+  background-color: #282d8f;
+  float: left;
+  color: white;
+}
+#contact .text1{
+  font-size: larger;
+  letter-spacing: 0.1mm;
+  word-spacing: 1mm;
+  margin: 5vh 7vw 8px 7vw;
+}
+.contact-btn {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #080861;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin: 0 7vw;
+}
+
+.contact-btn:hover {
+  background: #3f4199;
+  text-decoration: none;
+}
+#contact .text2 ,.text3{
+  font-size: larger;
+  letter-spacing: 0.1mm;
+  word-spacing: 1mm;
+  margin: 8px 7vw 0 7vw;
+}
+.contact-logo{
+ width: 50px;
+ position: relative;
+ top: 10px;
+ left: 90px;
+ margin-left: 15px;
+}
+
+footer{
+  width: 100%;
+  height: 3rem;
+  background-color: #333;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* functionalities of the page */
+
+/* Styles for both Sign In Popup and Login Page */
+#signInPopup, #loginPage {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content, .login-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius:20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+
+
+/* Additional styles for Sign In Popup */
+.popup-content h2{
+  font-size: 2.5rem;
+}
+#phoneNoInput,#gmailInput,#passwordInput,#confirmPasswordInput{
+  position: relative;
+  width: 80%;
+  height: 6%;
+  border: none;
+  border-bottom: 3px solid rgb(5, 87, 85);
+  transition: transform 0.3s ease;
+  background-color: rgb(16, 191, 226);
+  
+}
+#confirmPasswordInput{
+  left: 15px;
+}
+.phone,.gmail,.new-password,.confirm-password{
+  font-size: 1rem;
+  position: relative;
+  left: -136px;
+  margin: 40px 0 5px 0;
+  transition: transform 0.3s ease;
+}
+.phone.clicked,.phone-input.clicked,.gmail.clicked,.gmail-input.clicked,.new-password.clicked,.password-input.clicked,.confirm-password.clicked,.confirm-input.clicked,.signin-eye.clicked{
+  transform: translateY(-10px) translateX(-5px);
+  font-size: 0.9rem;
+}
+.gmail{
+  left: -137px;
+}
+.confirm-password{
+  left: -87px;
+}
+.new-password{
+  left: -102px;
+}
+
+#signInPopup .login-link {
+  float: right;
+  position: relative;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  right: 42px;
+}
+.signin-eye{
+  position: relative;
+  right: 15px;
+}
+
+#signInPopup .login-link a {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.signIn-btn{
+  position: relative;
+  left: -29px;
+  margin-top: 20px;
+}
+
+/* Additional styles for Login Page */
+
+
+#loginPage .signup-link a {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#loginPage .login-content ,.popup-content{
+  width: 25rem;
+  height: 60vh;
+  display: inline-block;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: linear-gradient(rgb(4, 156, 233), rgb(24, 246, 227));
+  box-shadow: 4px 4px 8px black;
+}
+/* signin popup */
+.popup-content{
+  height: 70vh;
+ 
+}
+.login-text{
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.text{
+  position: relative;
+  top: 50px;
+  left: -135px;
+  transition: transform 0.3s ease;
+}
+#emailPhoneInput{
+  position: relative;
+  width: 80%;
+  height: 8%;
+  margin: 60px 0 40px 0;
+  border: none;
+  border-bottom: 2px solid black;
+  transition: transform 0.3s ease;
+  background-color: rgb(124, 224, 239);
+}
+.text.clicked ,#emailPhoneInput.clicked,#text2.clicked,.password.clicked,.login-eye.clicked{
+  transform: translateY(-10px) translateX(-5px);
+  font-size: medium;
+}
+#text2{
+  position: relative;
+  left: -115px;
+  bottom: 10px;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+#passwords{
+  position: relative;
+  width: 80%;
+  height: 8%;
+  margin-bottom: 40px;
+  margin-left: 28px;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: rgb(124, 224, 239);
+  transition: transform 0.3s ease;
+}
+.login-eye{
+  position: relative;
+  right: 9%;
+ 
+}
+.btns{
+  background: #3479d9;
+  background-image: -webkit-linear-gradient(top, #3479d9, #19bbe8);
+  background-image: -moz-linear-gradient(top, #3479d9, #19bbe8);
+  background-image: -ms-linear-gradient(top, #3479d9, #19bbe8);
+  background-image: -o-linear-gradient(top, #3479d9, #19bbe8);
+  background-image: linear-gradient(to bottom, #3479d9, #19bbe8);
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  -webkit-box-shadow: 4px 4px 7px #666666;
+  -moz-box-shadow: 4px 4px 7px #666666;
+  box-shadow: 4px 4px 7px #666666;
+  font-family: Arial;
+  color: #333;
+  font-size: 23px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+  transition: transform 0.3s all;
+}
+
+.btns:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+.btnclicked{
+  transform: translateY(2px) translateX(2px);
+}
+
+.signup-link{
+  float: right;
+  font-size: 0.9rem;
+  position: relative;
+  right: 30px;
+  bottom: 30px;
+}
+      /* Styles for the popup container */
+    .popup-container{
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+      
+    }
+
+    #popupContent{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      box-shadow: 4px 4px 8px black;
+    }
+    
+    #popupContent h2{
+      position: relative;
+      top: -35px;
+    }
+    .input-image{
+      font-size: 1.5rem;
+      position: relative;
+      top: -20px;
+      display: inline-block;
+    }
+    
+    .file-input-container {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      width: 60%;
+      background-color:#a6e5f6;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      padding: 8px 12px;
+      cursor: pointer;
+      color: #333;
+    }
+    
+    .file-input-label {
+      display: inline-block;
+      font-size: small;
+    }
+    
+    #imageInput {
+      display: none;
+    }
+    
+    .discard-btn {
+      position: absolute;
+      top: -25px;
+      right: 0px;
+      padding: 4px;
+      font-size: 60px;
+      cursor: pointer;
+      display: none;
+    }
+    .input-category{
+      font-size: 1.5rem;
+      position:relative;
+      left: -115px;
+      top: 15px;
+      font-weight: lighter;
+     
+    }
+    #category{
+      position: relative;
+      left: -150px;
+      top: 35px;
+      margin-bottom: 15px;
+    }
+    #category0{
+      position: relative;
+      left: -179.5px;
+      margin-bottom: 15px;
+      top: 35px;
+    }
+    #category1,#category2,#category3{
+      position: relative;
+      left: 60px;
+      top: -65px;
+      margin-bottom: 15px;
+    }
+    #category1{
+      left: 40px;
+    }
+    #category2{
+      left: 51.5px;
+    }
+    input[type=checkbox] {
+      width: 20px;
+      height: 20px;
+     
+      }
+    .left{
+      float: left;
+      position: relative;
+      left: 104px;
+      top: 35px;
+    }
+    .right{
+      float: left;
+      position: relative;
+      left: 300px;
+      top: -65px;
+    }
+   
+    #profile-photo{
+      cursor: pointer;
+      display: none;
+      position: absolute;
+      float: left;
+      left: 140px;
+      top: 35px;
+      z-index: 2;
+    }
+    .after-login-name{
+      display: none;
+      position: absolute;
+      left: 180px;
+      top: 13px;
+      font-size: 2rem;
+       color: rgb(66, 167, 234);
+      font-variant-caps: all-petite-caps;
+      z-index: 2;
+      
+    }
+    .after-login-name{
+      width: 40%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .login-welcome {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      
+    }     
+    .login-welcome-content {
+      width: 90%;
+      position: absolute;
+      top: 50%;
+      left: 3%;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
+      padding: 20px;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      background-color: #080861;
+      color: rgb(66, 167, 234);
+      animation: dissolve 3s ease-in-out;
+      
+}
+  @keyframes dissolve{
+    0%{
+      transform: scale(0);
+    }
+    25%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1);
+    }
+    75%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(0) ;
+    }
+
+  }
+    
+    
+@media screen and (max-width: 1284px) {
+  .login-welcome-content {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 1173px) {
+  .login-welcome-content {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 904px) {
+  .login-welcome-content {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 648px) {
+  .login-welcome-content {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 500px) {
+  .login-welcome-content {
+    font-size: 0.9rem;
+  }
+}
+
+    .logout{
+      cursor: pointer;
+      display: none;
+      position: absolute;
+      width: 100px;
+      float: left;
+      left: 130px;
+      top: 79px;
+      font-size: 1.1rem;
+      z-index: 2;
+      color:#19bbe8;
+      text-align: center;
+      padding: 10px 5px 10px 5px;
+      background-color: #080861;
+      
+    }
+    #triangle{
+      display: none;
+      position: absolute;
+      left: 145px;
+      top: 77px;
+      z-index: 2;
+      rotate: 180deg;
+    }
+ @media (max-width: 500px) {
+  
+ }

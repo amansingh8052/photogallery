@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo-gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8f218c5ee4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="top">
+    <div class="navbar">
+        <div class="logo"><img id="logoImg" src="images/pg-logo.png"></div>
+        <div class="menu">
+        <a href="#home" class="active">HOME |</a>
+        <a href="">ABOUT US |</a>
+        <a href="">SERVICES |</a>
+        <a href="#Trending">GALLERY |</a>
+        <a href="#contact">CONTACT</a>
+        <button class="login btn" onclick="showLoginPage(), closePopup()">LOG IN</button>
+        <button class="signup btn" onclick="showSignInPopup(), closeLoginPage()">SIGN UP</button>
+     
+    </div>
+       
+        <div class="dropdown">
+            <button class="sign2 signup btn" onclick="showSignInPopup(),closeLoginPage()">SIGN UP</button>
+            <a href="#home" class="homeicon"><i class="fa-sharp fa-solid fa-house fa-xl" ></i></a>
+            <button onclick="" class="menu-button"><i class="fa-solid fa-bars fa-2xl" style="color: #42a7ea;"></i></button>
+      
+            <!-- dropdown list items will show when we click the drop button -->
+            <div id="list-items">
+                <a href="">ABOUT US</a>
+                <a href="">SERVICES</a>
+                <a href="#Trending">GALLERY</a>
+                <a href="#contact">CONTACT</a>
+                <a class="short-login" href="#" onclick="">LOG IN</a>
+                
+            </div>
+            </div>
+    </div>
+</section>
+
+<section class="home" id="home">
+    <button id="showPopupBtn" class="upload-btn">UPLOAD</button>
+<!-- Popup container -->
+<div class="popup-container" id="imageUploadPopup">
+  <div class="popup-content" id="popupContent">
+    <span class="close-button" id="closePopupBtn">&times;</span>
+    <h2>Upload Image</h2>
+    <form id="uploadForm">
+    <label for="imageInput" class="input-image">Choose your favourite image </label>
+    <div class="file-input-container">
+      <label for="imageInput" class="file-input-label" id="fileInputLabel">Click here to choose your image</label>
+      <input type="file" id="imageInput" accept="image/*" onchange="showFileName(event)">
+      <span class="discard-btn" id="discardBtn" onclick="discardFile()">&times;</span>
+    </div>
+      <br>
+      <h3 class="input-category">Category:</h3>
+      <input type="checkbox" id="category" name="category" value="Category 1">
+      <label for="category1" class="left">PHOTOS</label><br>
+      <input type="checkbox" id="category0" name="category" value="Category 2">
+      <label for="category2" class="left">ILLUSTRATIONS</label><br>
+      <input type="checkbox" id="category" name="category" value="Category 3">
+      <label for="category3" class="left">CLIPART</label><br>
+      <input type="checkbox" id="category1" name="category" value="Category 4">
+      <label for="category4" class="right">VECTORS</label><br>
+      <input type="checkbox" id="category2" name="category" value="Category 5">
+      <label for="category5" class="right">ICONS</label><br>
+      <input type="checkbox" id="category3" name="category" value="Category 6">
+      <label for="category6" class="right">PSD</label>
+      <br>
+      <input type="submit" class="btns" value="Upload">
+    </form>
+    
+  </div>
+</div>
+
+
+    <div id="typewriter">
+        <h1 class="show typed">PHOTO GALLERY</h1>
+    </div>    
+    <p>LET'S CAPTURE THR WORLD.....THE INTERNET'S SOURCE FOR VISUALS</p>
+    
+    <div class="search">
+        <input type="search" name="" id="searchbar" placeholder="   SEARCH FOR THE PICTURE. . . . . . .">
+        <div class="search-icon"><i class="fa-solid fa-magnifying-glass fa-2xl icon"></i>
+        </div>
+    </div>
+</section>
+<section class="type">
+    <p class="typetext">LOOKING FOR RIGHT PICTURE VISUALS? CHOOSE THE TYPE OF IMAGE YOU NEED.</p>
+<div class="category">
+    
+    <div class="cat photo">PHOTOS</div>
+    <div class="cat illustrations">ILLUSTRATIONS</div>
+    <div class="cat clipart">CLIPART</div>
+    <div class="cat vectors">VECTORS</div>
+    <div class="cat icons">ICONS</div>
+    <div class="cat psd">PSD</div>
+
+</div>
+</section>
+<section class="trending" id="Trending">
+    <div class="trendingtext">
+    <h1>SOME</h1>
+    <h1 class="trend">TRENDING</h1>
+    <h1>PICTURE . . . . . .</h1>
+</div>
+
+<div class="row">
+    <div class="column">
+      <img src="images/trend/2.jpg" class="grid-item">
+      <img src="images/trend/3.jpg" class="grid-item">
+      <img src="images/trend/4.jpg" class="grid-item">
+      <img src="images/trend/IMG_20221226_154142.jpg" class="grid-item">
+      <img src="images/trend/6.jpg" class="grid-item">
+    </div>
+    <div class="column">
+      <img src="images/trend/bulb.jpg" class="grid-item">
+      <img src="images/trend/IMG-20230602-WA0003.jpg" class="grid-item">
+      <img src="images/trend/5.jpg" class="grid-item">
+      <img src="images/trend/IMG_20230215_064740.jpg" class="grid-item">
+      <img src="images/trend/photo1.jpg" class="grid-item">
+    </div>
+    <div class="column">
+      <img src="images/trend/IMG_20230712_142719.jpg" class="grid-item">
+      <img src="images/trend/IMG_20221226_153910.jpg" class="grid-item">
+      <img src="images/trend/tiger_image.jpg" class="grid-item">
+      <img src="images/trend/sunset2.jpg" class="grid-item">
+      <img src="images/trend/IMG-20230712-WA0010.jpg" class="grid-item">
+      
+    </div>
+   
+  </div>
+
+<div class="fullscreen-modal">
+    <span class="close-btn"><i class="fa-solid fa-xmark fa-2xl"></i></span>
+    <div class="modal-content">
+        <img src="" alt="Full-screen Image" class="fullscreen-image">
+    </div>
+    <div class="navigation">
+        <button class="prev-btn"><i class="fa-solid fa-chevron-left fa-2xl"></i></button>
+        <button class="next-btn"><i class="fa-solid fa-chevron-right fa-2xl"></i></button>
+    </div>
+</div>
+
+</section>
+<section id="contact">
+  <div class="show-more">
+    <!-- <p class="show-para">Show more . . . .</p> -->
+    <i class="fa-sharp fa-solid fa-angles-down fa-2xl show-icon"></i>
+  </div>
+<p class="text1">IT IS THE PLATFORM ON WHICH YOU GET PICTURES AND YOU ARE ALSO ABLE TO UPLOAD YOUR CLICKED PICTURES</p>
+<button class="contact-btn">GET IN TOUCH</button>
+<p class="text2">CONTACT US : 88759XXXXX, 78910XXXXX, 123XXXX456</p>
+<p class="text3">FOLLOW US ON :
+</p>
+<img src="images/fb.png" alt="" class="contact-logo">
+    <img src="images/insta.png" alt="" class="contact-logo">
+    <img src="images/twitter.png" alt="" class="contact-logo">
+    <img src="images/snap.png" alt="" class="contact-logo">
+    <img src="images/tele.png" alt="" class="contact-logo">
+</section>
+
+<!-- functionalities -->
+<!-- Sign In Popup -->
+<div id="signInPopup">
+    <div class="popup-content">
+      <span class="close-button" onclick="closePopup()">&times;</span>
+      <h2>Sign In</h2>
+      <h3 class="phone">Name</h3>
+      <input type="text" class="phone-input" id="phoneNoInput" />
+      <h3 class="gmail">Gmail</h3>
+      <input type="text" class="gmail-input" id="gmailInput" />
+      <h3 class="new-password">New Password</h3>
+      <input type="password" class="password-input" id="passwordInput" />
+      <h3 class="confirm-password">Confirm Password</h3>
+      <input type="password" class="confirm-input" id="confirmPasswordInput" />
+      <i class="fa-regular fa-eye fa-lg signin-eye" onclick="togglePasswordVisibility()"></i>
+      <button class="btns signIn-btn" onclick="signIn()">Sign In</button>
+      <div class="login-link">
+        Already a user? <a href="#" onclick="showLoginPage(), closePopup()">Log in</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Login Page -->
+  <div id="loginPage">
+    <div class="login-content">
+      <span class="close-button" onclick="closeLoginPage()">&times;</span>
+      <h2 class="login-text">Login</h2>
+      <h3 class="text">Email</h3>
+      <input type="text" class="email" placeholder=" Email or Phone No." id="emailPhoneInput" />
+      <h3 id="text2" class="text2">Password</h3>
+      <input type="password" class="password" placeholder="  Password" id="passwords"/>
+      <i class="fa-regular fa-eye fa-lg login-eye" onclick=""></i>
+      <button class="btns login-btn" onclick="login()">Login</button>
+      <div class="signup-link">
+        New to Photo Gallery? <a href="#" onclick="showSignInPopup(),closeLoginPage()">Sign up</a>
+      </div>
+    </div>
+  </div>
+      <!-- after login profile -->
+      
+        <i class="fa-solid fa-circle-user fa-2xl" id="profile-photo" style="color: #3077f3;"></i>
+       <div class="after-login-name">user name</div> 
+       <div class="login-welcome">
+        <div class="login-welcome-content">
+          <p class="welcome-text">WELCOME BACK TO PHOTO GALLERY</p>
+        </div>
+       </div>
+
+       <i class="fa-solid fa-caret-down fa-2xl" id="triangle" style="color: #080861;"></i>
+  <div class="logout">LOG OUT</div>
+  <footer>All right reserved @ Photo gallery</footer>
+    <script src="index.js"></script>
+</body>
+</html>
