@@ -1047,6 +1047,41 @@ footer{
       z-index: 2;
       rotate: 180deg;
     }
- @media (max-width: 500px) {
-  
+   @media (max-width: 1025px){
+      .search{
+        width: 20rem;
+        top: 62vh;
+     }
+    }
+ @media (max-width: 420px) {
+  .logo{
+    left: 0;
+  }
+  .search{
+    width: 20rem;
+    top: 60vh;
  }
+ .category .cat{ 
+  height: 200px;
+  width: 340px;
+}
+.category .cat:hover{
+  transform: scale(1.2);
+}
+.trendingtext h1,.trend{
+  font-size: 25px;
+}
+#contact{
+  height: 63vh;
+}
+.contact-logo{
+  width: 40px;
+  top: 10px;
+  left: 40px;
+  margin-left: 10px;
+ }
+ .popup-content,.login-content{
+  width: 340px;
+  height: auto;
+ }
+}
