@@ -1062,14 +1062,17 @@ footer{
     top: 60vh;
  }
  .category .cat{ 
-  height: 200px;
-  width: 340px;
+  height: 160px;
+  width: 300px;
 }
 .category .cat:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
-.trendingtext h1,.trend{
-  font-size: 25px;
+.trendingtext h1{
+  font-size: 20px;
+}
+.trend{
+  font-size: 20px;
 }
 #contact{
   height: 63vh;
@@ -1080,8 +1083,13 @@ footer{
   left: 40px;
   margin-left: 10px;
  }
- .popup-content,.login-content{
-  width: 340px;
+ .popup-content,.login-content,#popupContent{
+  width: 300px;
   height: auto;
  }
+ .search .search-icon{
+  background-color: white;
+  width: 15%;
+
+}
 }
