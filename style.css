@@ -158,7 +158,7 @@
         justify-content:center;
         display: flex;
         flex-wrap: wrap;
-        
+        overflow: hidden;
     }
 
     .upload-btn {
@@ -222,6 +222,7 @@
   top: 55vh;
   width: 39rem;
   height: 6vh;
+    
 }
 .search .search-icon{
   border-radius: 10px;
@@ -1055,7 +1056,7 @@ footer{
     }
  @media (max-width: 420px) {
   .logo{
-    left: 0;
+    left: 5px;
   }
   .search{
     width: 20rem;
@@ -1073,6 +1074,8 @@ footer{
 }
 .trend{
   font-size: 20px;
+  word-spacing: normal;
+  letter-spacing: normal;
 }
 #contact{
   height: 63vh;
@@ -1085,11 +1088,12 @@ footer{
  }
  .popup-content,.login-content,#popupContent{
   width: 300px;
-  height: auto;
+  height: 700px;
  }
  .search .search-icon{
   background-color: white;
   width: 15%;
+  margin-left: 3px
 
 }
 }
