@@ -409,9 +409,8 @@ cursor: pointer;
 }
 .trendingtext h1{
   font-weight: lighter;
-  margin-right: 15px;
-  
-  
+  margin-right: 15px; 
+  word-spacing: normal;
 }
 .trend{
   color: red;
@@ -926,7 +925,7 @@ footer{
     #profile-photo{
       cursor: pointer;
       display: none;
-      position: absolute;
+      position: fixed;
       float: left;
       left: 140px;
       top: 35px;
@@ -934,7 +933,7 @@ footer{
     }
     .after-login-name{
       display: none;
-      position: absolute;
+      position: fixed;
       left: 180px;
       top: 13px;
       font-size: 2rem;
@@ -1099,5 +1098,18 @@ footer{
   width: 12%;
   margin-left: 3px;
 
+}
+#profile-photo{
+  left: 100px;
+}
+.after-login-name{
+  left: 140px;
+  font-size: 1.8rem; 
+  z-index: 2;
+  width: 35%;
+}
+.trendingtext h1{
+  font-weight: lighter;
+  margin-right: 5px; 
 }
 }
