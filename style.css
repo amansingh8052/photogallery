@@ -1050,7 +1050,7 @@ footer{
     }
    @media (max-width: 1025px){
       .search{
-        width: 20rem;
+        width: 21rem;
         top: 62vh;
      }
     }
@@ -1059,7 +1059,7 @@ footer{
     left: 5px;
   }
   .search{
-    width: 20rem;
+    width: 21rem;
     top: 60vh;
  }
  .category .cat{ 
@@ -1073,7 +1073,7 @@ footer{
   font-size: 20px;
 }
 .trend{
-  font-size: 20px;
+  font-size: 18px;
   word-spacing: normal;
   letter-spacing: normal;
 }
@@ -1086,14 +1086,18 @@ footer{
   left: 40px;
   margin-left: 10px;
  }
- .popup-content,.login-content,#popupContent{
+ .popup-content,#popupContent{
   width: 300px;
-  height: 700px;
+  height: 500px;
+ }
+ .login-content{
+  width: 300px;
+  height: 500px;
  }
  .search .search-icon{
   background-color: white;
-  width: 15%;
-  margin-left: 3px
+  width: 12%;
+  margin-left: 3px;
 
 }
 }
