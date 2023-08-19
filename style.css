@@ -1055,10 +1055,21 @@ footer{
     }
  @media (max-width: 420px) {
   .logo{
-    left: 5px;
+    left: 0;
+  }
+  .menu-button {
+    padding: 10px;
+    font-size: 12px;
+    
+    }
+  .homeicon{
+    color: #42a7ea;
+    font-size: 14px;
+    position: relative;
+    left: 8px;
   }
   .search{
-    width: 21rem;
+    width: 22rem;
     top: 60vh;
  }
  .category .cat{ 
@@ -1072,9 +1083,7 @@ footer{
   font-size: 20px;
 }
 .trend{
-  font-size: 18px;
-  word-spacing: normal;
-  letter-spacing: normal;
+  font-size: 20px;
 }
 #contact{
   height: 63vh;
@@ -1085,31 +1094,125 @@ footer{
   left: 40px;
   margin-left: 10px;
  }
- .popup-content,#popupContent{
+ .popup-content{
   width: 300px;
   height: 500px;
  }
- .login-content{
+ .popup-container .popup-content{
   width: 300px;
-  height: 500px;
+  height: 400px;
+ }
+ #loginPage .login-content{
+  width: 300px;
+  height: 400px;
  }
  .search .search-icon{
   background-color: white;
   width: 12%;
-  margin-left: 3px;
 
 }
 #profile-photo{
-  left: 100px;
+  left: 105px;
+  font-size: 27px;
+}
+#triangle{
+  left: 109px;
+  top: 77px;
+}
+.logout{
+  left: 94px;
+  top: 79px;
 }
 .after-login-name{
   left: 140px;
-  font-size: 1.1rem; 
+  top: 16px;
+  font-size: 1.8rem; 
   z-index: 2;
-  width: 35%;
+  width: 30%;
 }
 .trendingtext h1{
   font-weight: lighter;
   margin-right: 5px; 
+  
+}
+.phone{
+  left: -98px;
+}
+.gmail{
+  left: -97px;
+}
+.confirm-password{
+  left: -45px;
+}
+.new-password{
+  left: -60px;
+}
+.signIn-btn{
+  position: relative;
+  left: 15px;
+  margin-top: 25px;
+}
+#signInPopup .login-link {
+  margin-top: 0px;
+  right: 30px;
+}
+
+.signup-link{
+  font-size: 0.8rem;
+  right: 30px;
+  bottom: 36px;
+}
+#text2{
+  position: relative;
+  left: -76px;
+  bottom: 4px;
+}
+.text{
+  top: 56px;
+  left: -95px;
+}
+.login-btn{
+  position: relative;
+  left: 25px;
+}
+/* upload section */
+#popupContent h2{
+  top: 10px;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.input-image{
+  font-size: 1.1rem;
+}
+.input-category{
+  font-size: 1.3rem;
+  left: -105px;
+  top: 15px;
+ 
+}
+#category{
+  left: -170px;
+}
+#category0{
+  left: -199.5px;
+}
+#category3{
+  left: 21px;
+}
+#category1{
+  left: 1px;
+}
+#category2{
+  left: 13px;
+}
+.left{
+  left: 35px;
+}
+.right{
+  left: 210px;
+}
+.upload2{
+  position: relative;
+  bottom: 40px;
 }
 }
